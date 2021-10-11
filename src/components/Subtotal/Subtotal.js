@@ -20,6 +20,10 @@ const Subtotal = () => {
                                     <td><strong>BDT {value}</strong></td>
                                 </tr>
                                 <tr>
+                                    <td><b>Discount</b> ({basket.length} items):</td>
+                                    <td><strong>BDT 0</strong></td>
+                                </tr>
+                                <tr>
                                     <td><b>Tax (0%)</b> :</td>
                                     <td><strong>BDT  0</strong></td>
                                 </tr>

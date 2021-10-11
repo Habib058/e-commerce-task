@@ -1,7 +1,14 @@
 .button {
-    background: #f0c14b;
+    background: #7872B9;
     border: 1px solid;
-    margin-top: 10px;
+    margin:10px;
     border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    color: white;
+}
+.textName{
+    width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 10px;
 }
