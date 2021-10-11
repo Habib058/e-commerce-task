@@ -4,7 +4,6 @@ import { useStateValue } from '../Subtotal/StateProvider';
 
 const Checkout = () => {
     const [{ basket }, dispatch] = useStateValue();
-    console.log(basket)
     return (
         <div>
             <div>
@@ -32,8 +31,6 @@ const Checkout = () => {
                         </tbody>
                     </table>:<h3>Your Basket is empty</h3>
                 }
-
-
             </div>
 
         </div>
