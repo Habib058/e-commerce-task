@@ -1,0 +1,15 @@
+.containerPart{
+    display: flex;
+    background-color: azure;
+}
+.leftSide{
+    flex: 4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rightSide{
+    flex: 2;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header_searchInput{
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
