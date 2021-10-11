@@ -13,17 +13,30 @@ const Subtotal = () => {
             <CurrencyFormat
                 renderText={(value) => (
                     <>
-                        <p>
-                            <b>Subtotal</b> ({basket.length} items):<strong style={{paddingLeft:'200px'}}>BDT {value}</strong>
-                        </p>
-                        <p>
-                            <b>Tax (0%)</b> ({basket.length} items) :<strong style={{paddingLeft:'200px'}}>BDT  0</strong>
-                        </p>
-                        <p>
-                            <b>Total</b> ({basket.length} items):<strong style={{paddingLeft:'200px'}}>BDT {value}</strong>
-                        </p>
-                        <button>Pay</button>
+                        <table className="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><b>Subtotal</b> ({basket.length} items):</td>
+                                    <td><strong>BDT {value}</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tax (0%)</b> :</td>
+                                    <td><strong>BDT  0</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Total : </b></td>
+                                    <td><strong>BDT {value}</strong></td>
+                                </tr>
+                                <tr className="pay">
+                                    <td><b>PAY</b></td>
+                                    <td><b>BDT {value}</b></td>
+                                </tr>
+
+                                
+                            </tbody>
+                        </table>
                         
+
                     </>
 
                 )}
