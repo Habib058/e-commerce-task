@@ -22,10 +22,10 @@ const Product = (props) => {
     
     return (
         <div className='col-md-2 mb-3'>
-            <div className='card shadow-lg border'>
+            <div onClick={addToBasket} className='card shadow-lg border product'>
                 <img style={{ height: '200px' }} className='img-fluid' src={img} alt="" />
                 <p className="textName">{name}</p>
-                <button className='button' onClick={addToBasket}>Add to basket</button>
+                {/* <button className='button' onClick={addToBasket}>Add to basket</button> */}
             </div>
         </div>
     );

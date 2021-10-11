@@ -24,3 +24,6 @@
     background-color:#7872B9 ;
     color: white;
 }
+.pay:hover{
+    cursor: pointer;
+}

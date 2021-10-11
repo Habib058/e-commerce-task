@@ -13,33 +13,35 @@ const Subtotal = () => {
             <CurrencyFormat
                 renderText={(value) => (
                     <>
-                        <table className="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <td><b>Subtotal</b> ({basket.length} items):</td>
-                                    <td><strong>BDT {value}</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><b>Discount</b> ({basket.length} items):</td>
-                                    <td><strong>BDT 0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><b>Tax (0%)</b> :</td>
-                                    <td><strong>BDT  0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><b>Total : </b></td>
-                                    <td><strong>BDT {value}</strong></td>
-                                </tr>
-                                <tr className="pay">
-                                    <td><b>PAY</b></td>
-                                    <td><b>BDT {value}</b></td>
-                                </tr>
+                        {
+                            basket.length && <table className="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td><b>Subtotal</b> ({basket.length} items):</td>
+                                        <td><strong>BDT {value}</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Discount</b> ({basket.length} items):</td>
+                                        <td><strong>BDT 0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tax (0%)</b> :</td>
+                                        <td><strong>BDT  0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total : </b></td>
+                                        <td><strong>BDT {value}</strong></td>
+                                    </tr>
+                                    <tr className="pay">
+                                        <td><b>PAY</b></td>
+                                        <td><b>BDT {value}</b></td>
+                                    </tr>
 
-                                
-                            </tbody>
-                        </table>
-                        
+
+                                </tbody>
+                            </table>
+                        }
+
 
                     </>
 

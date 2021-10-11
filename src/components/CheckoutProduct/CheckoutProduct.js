@@ -16,7 +16,7 @@ const CheckoutProduct = ({ img, name, price, key }) => {
             <td><img src={img} style={{ height: '50px' }} alt="" /></td>
             <td>{name}</td>
             <td>{price}</td>
-            <td onClick={removeFromBasket}><DeleteForeverIcon style={{color:'red'}}></DeleteForeverIcon></td>
+            <td onClick={removeFromBasket} className='delete'> <DeleteForeverIcon style={{color:'red'}}/></td>
         </tr>
     );
 };
